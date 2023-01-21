@@ -5,11 +5,11 @@ To use JSON Web Token (JWT) authentication with Passport.js and Node.js, you can
 npm install passport passport-jwt jsonwebtoken
 ```
 
-- Create a user model with fields such as username, password, and email. You can use a library like Mongoose to define the schema and interact with a MongoDB database.
+- Create a user model with fields such as `username`, `password`, and `email`. You can use a library like Mongoose to define the schema and interact with a MongoDB database.
 
-- Create a new strategy for Passport.js that uses JWT. This strategy will check for a valid JWT in the Authorization header of incoming requests, and decode it to get the user's ID.
+- Create a new strategy for Passport.js that uses JWT. This strategy will check for a valid JWT in the `Authorization` header of incoming requests, and decode it to get the user's ID.
 
-- In the route handling function, use passport.authenticate('jwt', { session: false }) to authenticate the user.
+- In the route handling function, use `passport.authenticate('jwt', { session: false })` to authenticate the user.
 
 - In the route handling function, use req.user to access the user's ID and other information.
 
